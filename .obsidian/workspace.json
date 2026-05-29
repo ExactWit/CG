@@ -1,0 +1,190 @@
+{
+  "main": {
+    "id": "3058b3535704d9b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "0952c4b4553ab169",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "48deee6c5507691c",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "image/Bezier Curve@1~3.png"
+              },
+              "icon": "lucide-image",
+              "title": "Bezier Curve@1~3"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "20e3682d491acb28",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a6b1faadfc0db7d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa17e9426bda7d10",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f4b693dbd2fadbc8",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "713e00b27ce7dd74",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a3c67888141783e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "d98a474ef2c63f65",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7d8bba64a207aa8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "image/Bezier Curve@1~3.png",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Bezier Curve@1~3 的反向链接列表"
+            }
+          },
+          {
+            "id": "092b48c051bd9e3c",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "image/Bezier Curve@1~3.png",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Bezier Curve@1~3 的出链列表"
+            }
+          },
+          {
+            "id": "b9a79ab026438d4b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "0b10f35e892c5d69",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "8e04c6b71c66bba9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "image/Bezier Curve@1~3.png",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Bezier Curve@1~3 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "48deee6c5507691c",
+  "lastOpenFiles": [
+    "image/参数曲线家族.png",
+    "Discussion/【20260529】关于校验思想的若干应用.md",
+    "Discussion/孪生子图图示.png"
+  ]
+}
