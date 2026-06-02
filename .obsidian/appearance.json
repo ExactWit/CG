@@ -1,1 +1,8 @@
-{}
+{
+  "enabledCssSnippets": [
+    "math-callouts"
+  ],
+  "cssTheme": "Minimal",
+  "accentColor": "",
+  "theme": "moonstone"
+}

@@ -1,0 +1,134 @@
+/*
+ * 数学 Callout 样式 — Math Callout Styles
+ * 用于数学内核系统的 Obsidian CSS Snippet
+ * 
+ * 使用方式：在 Obsidian 设置 → 外观 → CSS 代码片段 中启用此文件
+ * 
+ * 支持的 callout 类型及颜色：
+ *   [!definition]  定义      — 蓝色 (Blue)
+ *   [!theorem]     定理      — 紫色 (Purple)
+ *   [!lemma]       引理      — 青色 (Teal)
+ *   [!corollary]   推论      — 薰衣草 (Lavender)
+ *   [!proposition] 命题      — 靛蓝 (Indigo)
+ *   [!proof]       证明      — 灰色 (Gray)
+ *   [!property]    性质      — 绿色 (Green)
+ *   [!remark]      注记      — 橙色 (Orange)
+ *   [!example]     例子      — 金黄 (Amber)
+ *   [!axiom]       公理      — 深红 (Crimson)
+ *   [!notation]    记号约定  — 棕色 (Brown)
+ *   [!intuition]   直觉      — 粉色 (Pink)
+ *   [!algorithm]   算法      — 深青 (Cyan)
+ *   [!application] 应用      — 草绿 (Lime)
+ */
+
+/* ============================================
+   定义 (Definition) — 蓝色
+   ============================================ */
+.callout[data-callout="definition"] {
+  --callout-color: 59, 130, 246;
+  --callout-icon: lucide-book-open;
+}
+
+/* ============================================
+   定理 (Theorem) — 紫色
+   ============================================ */
+.callout[data-callout="theorem"] {
+  --callout-color: 139, 92, 246;
+  --callout-icon: lucide-star;
+}
+
+/* ============================================
+   引理 (Lemma) — 青色
+   ============================================ */
+.callout[data-callout="lemma"] {
+  --callout-color: 20, 184, 166;
+  --callout-icon: lucide-git-branch;
+}
+
+/* ============================================
+   推论 (Corollary) — 薰衣草
+   ============================================ */
+.callout[data-callout="corollary"] {
+  --callout-color: 167, 139, 250;
+  --callout-icon: lucide-corner-down-right;
+}
+
+/* ============================================
+   命题 (Proposition) — 靛蓝
+   ============================================ */
+.callout[data-callout="proposition"] {
+  --callout-color: 99, 102, 241;
+  --callout-icon: lucide-target;
+}
+
+/* ============================================
+   证明 (Proof) — 灰色
+   ============================================ */
+.callout[data-callout="proof"] {
+  --callout-color: 148, 163, 184;
+  --callout-icon: lucide-check-square;
+}
+
+/* ============================================
+   性质 (Property) — 绿色
+   ============================================ */
+.callout[data-callout="property"] {
+  --callout-color: 34, 197, 94;
+  --callout-icon: lucide-check-circle;
+}
+
+/* ============================================
+   注记 (Remark) — 橙色
+   ============================================ */
+.callout[data-callout="remark"] {
+  --callout-color: 251, 146, 60;
+  --callout-icon: lucide-message-circle;
+}
+
+/* ============================================
+   例子 (Example) — 金黄
+   ============================================ */
+.callout[data-callout="example"] {
+  --callout-color: 245, 158, 11;
+  --callout-icon: lucide-lightbulb;
+}
+
+/* ============================================
+   公理 (Axiom) — 深红
+   ============================================ */
+.callout[data-callout="axiom"] {
+  --callout-color: 220, 38, 38;
+  --callout-icon: lucide-shield;
+}
+
+/* ============================================
+   记号约定 (Notation) — 棕色
+   ============================================ */
+.callout[data-callout="notation"] {
+  --callout-color: 180, 120, 60;
+  --callout-icon: lucide-pen-tool;
+}
+
+/* ============================================
+   直觉 (Intuition) — 粉色
+   ============================================ */
+.callout[data-callout="intuition"] {
+  --callout-color: 236, 72, 153;
+  --callout-icon: lucide-zap;
+}
+
+/* ============================================
+   算法 (Algorithm) — 深青
+   ============================================ */
+.callout[data-callout="algorithm"] {
+  --callout-color: 6, 182, 212;
+  --callout-icon: lucide-cpu;
+}
+
+/* ============================================
+   应用 (Application) — 草绿
+   ============================================ */
+.callout[data-callout="application"] {
+  --callout-color: 132, 204, 22;
+  --callout-icon: lucide-rocket;
+}
