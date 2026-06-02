@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Discussion/【20260529】关于校验思想的若干应用.md",
+                "file": "Bezier Curve.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "【20260529】关于校验思想的若干应用"
+              "title": "Bezier Curve"
             }
           }
         ]
@@ -197,8 +197,10 @@
   },
   "active": "48deee6c5507691c",
   "lastOpenFiles": [
-    "Discussion/孪生子图图示.png",
+    "B-Spline.md",
+    "Bezier Curve.md",
     "Discussion/【20260529】关于校验思想的若干应用.md",
+    "Discussion/孪生子图图示.png",
     "计算机图形学/讨论记录/孪生子图图示.png",
     "计算机图形学/讨论记录/孪生子图图示.paint",
     "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.zip",

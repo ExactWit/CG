@@ -1,0 +1,25 @@
+name: Trigger Blog Deployment
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger global blog deployment
+        uses: peter-evans/repository-dispatch@v3
+        with:
+          token: ${{ secrets.BLOG_DEPLOY_TOKEN }}
+          repository: ExactWit/ExactWit.github.io
+          event-type: deploy-blog
+          client-payload: |
+            {
+              "source_repo": "${{ github.repository }}",
+              "commit_sha": "${{ github.sha }}",
+              "commit_message": "${{ github.event.head_commit.message }}",
+              "author": "${{ github.event.head_commit.author.name }}",
+              "timestamp": "${{ github.event.head_commit.timestamp }}"
+            }
