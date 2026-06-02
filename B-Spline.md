@@ -15,12 +15,16 @@
 
 >[!definition]
 >**B-Spline Curve**
->给定 $n+1$ 个控制点 $\{b_{i}\}_{0}^{n}\subset\mathbb{R}^d$ 与 $m+1$ 个节点 $U=\{ u_{i} \}_{0}^m\subset I$，满足 $m=n+k$，则 $k$ 阶B-Spline Curve定义为：$$r(u)=\sum_{i=0}^nN_{i,k}(u)\cdot b_{i},u\in[u_{k-1},u_{n+1}],$$ 其中 $N_{i,k}(u)$ 是第 $i$ 个 $k$ 阶B样条基函数，由德布尔-考克斯递推公式定义：$$\begin{gather}
-N_{i,1}(u)=\begin{cases}1,u_{i}\le u <u_{i+1} \\
-0,其他
-\end{cases} \\
-N_{i,k}(u)=\frac{u-u_{i}}{u_{i+k-1}-u_{i}}N_{i,k-1}(u)+\frac{u_{i+k}-u}{u_{i+k}-u_{i+1}}N_{i+1,k-1}(u)
-\end{gather}$$
+>给定 $n+1$ 个控制点 $\{b_{i}\}_{0}^{n}\subset\mathbb{R}^d$ 与 $m+1$ 个节点 $U=\{ u_{i} \}_{0}^m\subset I$，满足 $m=n+k$，则 $k$ 阶B-Spline Curve定义为：
+>$$r(u)=\sum_{i=0}^nN_{i,k}(u)\cdot b_{i},u\in[u_{k-1},u_{n+1}],$$
+>
+>其中 $N_{i,k}(u)$ 是第 $i$ 个 $k$ 阶B样条基函数，由德布尔-考克斯递推公式定义：
+>$$\begin{gather}
+>N_{i,1}(u)=\begin{cases}1,u_{i}\le u <u_{i+1} \\
+>0,其他
+>\end{cases} \\
+>N_{i,k}(u)=\frac{u-u_{i}}{u_{i+k-1}-u_{i}}N_{i,k-1}(u)+\frac{u_{i+k}-u}{u_{i+k}-u_{i+1}}N_{i+1,k-1}(u)
+>\end{gather}$$
 
 >[!remark]
 >B样条曲线的次数为 $p=k-1$。一条由 $n+1$ 个控制点定义的 $k$ 阶B样条曲线，当其内部节点均为简单节点时（重数 $r=1$），其精确等价于 $n+1-p$ 段 $p$ 次贝塞尔曲线的拼接，且保持 $C^{p-1}$ 连续条件。
