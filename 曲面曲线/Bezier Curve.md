@@ -54,13 +54,13 @@
 >**Bezier Curve**
 >给定 $n+1$ 个控制点坐标 $\{b_{i}\}$ ，其 $n$ 次贝塞尔曲线的定义为
 >$$C(t)=\sum_{i=0}^nB_{i,n}(t)\cdot b_{i},t\in[0,1],$$
-其中系数来自伯恩斯坦基函数
-$$B_{i,n}(t)=\binom{n}{i}t^i(1-t)^{n-i}=\frac{n!}{i!(n-i)!}t^i(1-t)^{n-i}$$
-满足
-$$\begin{cases}\forall t\in[0,1],B_{i,n}\ge0,\\  
-\forall t\in[0,1],\sum_{i=0}^nB_{i,n}(t)=1, \\
-B_{0,n}(0)=B_{n,n}(1)=1,B_{i,n}(0)=B_{i,n}(1)=0
-\end{cases}$$
+>其中系数来自伯恩斯坦基函数
+>$$B_{i,n}(t)=\binom{n}{i}t^i(1-t)^{n-i}=\frac{n!}{i!(n-i)!}t^i(1-t)^{n-i}$$
+>满足
+>$$\begin{cases}\forall t\in[0,1],B_{i,n}\ge0,\\  
+>\forall t\in[0,1],\sum_{i=0}^nB_{i,n}(t)=1, \\
+>B_{0,n}(0)=B_{n,n}(1)=1,B_{i,n}(0)=B_{i,n}(1)=0
+>\end{cases}$$
 
 >[!remark]
 >伯恩斯坦基函数的三个性质保证了：
