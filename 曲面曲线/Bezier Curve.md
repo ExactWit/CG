@@ -235,15 +235,19 @@ C^k\subset G^k
 >$d>3$得到高维贝塞尔曲线，常用于数据拟合、机器学习领域。
 
 >[!propety]
->**1.过端点**$$r(0)=b_{0},r(1)=b_{n}.$$
+>**1.过端点**
+>$$r(0)=b_{0},r(1)=b_{n}.$$
 >**2.端点$k$阶导数只和最近$k$个点相关**
 >$$\begin{gather}
 >r^{(k)}(0)=\frac{n!}{(n-k)!}\sum_{i=0}^k(-1)^{k-i}\binom{k}{i}b_{i}, \\
 >r^{(k)}(1)=\frac{n!}{(n-k)!}\sum_{i=0}^k(-1)^{i}\binom{k}{i}b_{n-i}.  
 >\end{gather}$$
-**3.凸包**$$r(t)\in conv\{b_{i}\}_{0}^n,\forall t\in[0,1].$$
-**4.单条曲线全局光滑**$$r\in C^{\infty}.$$
-**5.仿射不变性**$$\forall T\in Aff(d),T(\sum_{i=0}^nB_{i,n}(t)\cdot b_{i})=\sum_{i=0}^nT(b_{i})b_{i,n}(t).$$
+**3.凸包**
+>$$r(t)\in conv\{b_{i}\}_{0}^n,\forall t\in[0,1].$$
+**4.单条曲线全局光滑**
+>$$r\in C^{\infty}.$$
+**5.仿射不变性**
+>$$\forall T\in Aff(d),T(\sum_{i=0}^nB_{i,n}(t)\cdot b_{i})=\sum_{i=0}^nT(b_{i})b_{i,n}(t).$$
 >**6.升阶性质**
 >$$\begin{gather}\sum_{i=0}^nB_{i,n}(t)b_{i}=\sum_{i=0}^{n+1}B_{i,n+1}(t)b^*_{i},\\
 >b_{i}^*=\frac{i}{n+1}b_{i-1}+(1-\frac{i}{n+1})b_{i}
