@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "曲面曲线/Bezier Curve.md",
+                "file": "几何处理/几何表示/几何表示大观.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Bezier Curve"
+              "title": "几何表示大观"
             }
           }
         ]
@@ -197,9 +197,9 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "曲面曲线/B-Spline.md",
     "曲面曲线/Bezier Curve.md",
-    "几何处理/几何表示/B-Rep，Mesh，.md",
+    "曲面曲线/B-Spline.md",
+    "几何处理/几何表示/几何表示大观.md",
     "几何处理/神经网络方法",
     "几何处理/网格处理",
     "几何处理/几何表示",
