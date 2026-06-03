@@ -1,0 +1,11 @@
+{
+  "id": "quartz-format-checker",
+  "name": "Quartz Format Checker",
+  "version": "1.0.0",
+  "minAppVersion": "0.15.0",
+  "description": "实时检查 Markdown 格式问题，确保 Quartz 渲染一致性",
+  "author": "ExactWit",
+  "authorUrl": "",
+  "fundingUrl": "",
+  "isDesktopOnly": false
+}
