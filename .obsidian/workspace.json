@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
+                "file": "实验报告/DiffusionNet(2022).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "常见 3D 数据结构与深度学习应用"
+              "title": "DiffusionNet(2022)"
             }
           }
         ]
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "image/Bezier Curve@1~3.png",
+                "file": "实验报告/DiffusionNet(2022).md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Bezier Curve@1~3 的大纲"
+              "title": "DiffusionNet(2022) 的大纲"
             }
           },
           {
@@ -207,18 +207,32 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "曲面曲线/B-Spline.md",
-    "讨论纪要/关于校验思想的若干应用.md",
-    "讨论纪要/孪生子图图示.png",
+    "实验报告/img/alien1.png",
+    "实验报告/img/alien0.png",
+    "实验报告/img/chairs0.png",
+    "讨论纪要/装机清单.md",
+    "实验报告/DiffusionNet(2022).md",
+    "实验报告/img/040.png",
+    "实验报告/img/Training.png",
+    "实验报告/img/007.png",
+    "Pasted image 20260615160632.png",
+    "曲面曲线/Bezier Curve.md",
+    "实验报告/img/human.png",
+    "Pasted image 20260615154741.png",
+    "实验报告/img/diffusionnet.png",
+    "实验报告/img",
+    "几何处理/几何表示/热核签名(HKS).md",
+    "实验报告",
     "研究规划/工业网格的智能修复与层次化表示.md",
     "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
     "几何处理/几何表示/几何表示大观.md",
-    "几何处理/几何表示/3D几何表示大观.png",
+    "曲面曲线/B-Spline.md",
+    "讨论纪要/关于校验思想的若干应用.md",
+    "讨论纪要/孪生子图图示.png",
     "几何处理/符号距离场（SDF）.md",
     "研究规划",
     "讨论纪要与规划/讨论",
     "CG图景.md",
-    "曲面曲线/Bezier Curve.md",
     "几何处理/神经网络方法",
     "几何处理/网格处理",
     "几何处理/几何表示",
@@ -226,17 +240,10 @@
     "曲面曲线",
     "test.md",
     "讨论纪要/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/讨论记录/孪生子图图示.png",
     "计算机图形学/讨论记录/孪生子图图示.paint",
-    "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.zip",
     "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/讨论记录",
     "计算机图形学/笔记/Bezier Curve.md",
     "计算机图形学/笔记/B-Spline.md",
-    "计算机图形学/日志/log.md",
-    "计算机图形学/image/参数曲线家族.png",
-    "计算机图形学/image/Bezier Curve@1~3.png",
-    "image/Bezier Curve@1~3.png",
-    "image/参数曲线家族.png"
+    "计算机图形学/日志/log.md"
   ]
 }
