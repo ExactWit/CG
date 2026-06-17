@@ -93,54 +93,49 @@ date: 2026-06-15
 
 ---
 # 实验复现
-![[human.png]]
-## Reproducing Settings
-Face-level segmentation(8 classes)
-使用hks热核签名特征
-数据集为
-## Human Result
-![[Training.png]]
-**TEST ACC：97.77%**
-**Ground Truth  | Prediction**
-![[007.png]]
+![[实验报告/img/human.png]]
+复现结果一览
 
+| Dataset  | Feat    | Best Acc  |
+| -------- | ------- | --------- |
+| Human(8) | **hks** | **97.77** |
+| -        | xyz     | 96.51     |
+| Vase(3)  | hks     | 92.43     |
+| -        | **xyz** | **93.90** |
+| Chair(4) | hks     | 96.73     |
+| -        | **xyz** | **97.57** |
+| Alien(4) | hks     | 94.65     |
+| -        | **xyz** | **97.11** |
+## Human
+![[TrainHuman.png]]
+
+**Ground Truth  | Prediction**
+#007 (HKS，99.4%，13,776faces)
+![[human007hks.png]]
+#007 (XYZ，97.6%，13,776faces)
+![[human007xyz.png]]
+
+#40 (HKS，96.4%，10,000 faces)
 ![[040.png]]
 
-边界瑕疵较为明显
+#40 (XYZ，96.4%，10,000 faces)
+![[human40xyz.png]]
 
 
-## Coseg
-### Chairs（96.16%）
+## Coseg-chairs
+#0 (HKS，97.4%，1,408 faces)
 ![[chairs0.png]]
-### aliens
-#### HKS（93.97%）
-Cases:
-![[实验报告/img/alien0.png]]alien0(hks)分不清尾巴和腿（80.2%）
-![[alien1.png]]alien1，有较大瑕疵（98.6%） ^31d880
 
-#### XYZ
-![[xyz_alien0.png]]
-**alien0(96.1%)，这说明了一个自然的问题，[[热核签名(HKS)]]难以区分两个几何特征相似的形体（尾巴与腿），这时坐标特征带来了更充分的信息**
+#9 （HKS，98%，9,664 faces）
+![[chais9hks.png]]
+#9 （XYZ，98.2%，9,664 faces）
+![[chairs9xyz.png]]
+## Coseg-aliens
+#0 (HKS，80.2%，5040 faces)
+![[实验报告/img/alien0.png]]
+#0 (XYZ，95.6%，5040 faces)
+![[aliens0xyz.png]]
+这说明了一个自然的问题，[[热核签名(HKS)]]难以区分两个几何特征相似的形体（尾巴与腿），这时坐标特征带来了更充分的信息**
+![[alien1.png]]alien1，有较大瑕疵（98.6%） 
 
 ---
-# 改进计划
-
-## 各向异性扩散层（Anisotropic Diffusion Layer）
-
-- **动机**：这是最核心的机制级改进方向。原版扩散是各向同性的，而真实曲面大量存在方向性结构（人体四肢、机械棱边、纹理），沿结构方向和垂直方向的扩散速度应当不同。
-- **具体方案**：
-    
-    将标量热方程推广为**各向异性扩散方程**：
-    
-    $$\frac{\partial u}{\partial t} = \mathrm{div}( \mathbf{D} \nabla u )$$
-    
-    其中 $\mathbf{D}$ 是每个顶点处的$2×2$对称正定扩散张量，由一个轻量 MLP 根据局部特征预测，控制扩散的方向偏好和速率。
-    
-    离散化上采用协变导数或离散外微积分格式，保证跨网格、跨表示的一致性。
-- **实验验证**：
-    
-    - 主实验：在有强方向结构的数据集（人体分割、机械零件分割）上验证细粒度边界精度提升。
-    - 鲁棒性实验：保留跨重采样、跨表示迁移的测试，证明改进后仍保持离散化无关性。
-    - 可视化：展示张量场的方向是否和形状结构对齐。
-    
-- **难度**：中等，需要基础的离散微分几何知识，但数值格式有成熟参考。
