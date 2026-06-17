@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "几何处理/几何表示/热核签名(HKS).md",
+                "file": "研究规划/工业网格的智能修复与层次化表示.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "热核签名(HKS)"
+              "title": "工业网格的智能修复与层次化表示"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,12 +219,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "61957b6c8e43c9c3",
+  "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "研究规划/工业网格的智能修复与层次化表示.md",
-    "讨论纪要/装机清单.md",
-    "几何处理/几何表示/热核签名(HKS).md",
+    "讨论纪要/周报/260617.md",
     "实验报告/DiffusionNet(2022).md",
+    "作者/Nicholas Sharp.md",
+    "讨论纪要/周报",
+    "作者",
+    "几何处理/几何表示/未命名.md",
+    "实验报告/img/remesh.png",
+    "实验报告/img/不定邻居.png",
+    "研究规划/工业网格的智能修复与层次化表示.md",
+    "几何处理/几何表示/热核签名(HKS).md",
+    "讨论纪要/装机清单.md",
     "曲面曲线/B-Spline.md",
     "曲面曲线/Bezier Curve.md",
     "实验报告/img/xyz_alien0.png",
@@ -236,8 +242,6 @@
     "实验报告/img/Training.png",
     "实验报告/img/007.png",
     "Pasted image 20260615160632.png",
-    "实验报告/img/human.png",
-    "Pasted image 20260615154741.png",
     "实验报告/img",
     "实验报告",
     "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
@@ -251,10 +255,8 @@
     "几何处理/网格处理",
     "几何处理/几何表示",
     "几何处理",
-    "曲面曲线",
     "test.md",
     "讨论纪要/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/讨论记录/孪生子图图示.paint",
     "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md",
     "计算机图形学/笔记/Bezier Curve.md",
     "计算机图形学/笔记/B-Spline.md",
