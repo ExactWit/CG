@@ -13,26 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "实验报告/DiffusionNet(2022).md",
+                "file": "几何处理/网格处理/网格测地线算法.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DiffusionNet(2022)"
-            }
-          },
-          {
-            "id": "61957b6c8e43c9c3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "研究规划/工业网格的智能修复与层次化表示.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "工业网格的智能修复与层次化表示"
+              "title": "网格测地线算法"
             }
           }
         ]
@@ -170,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "研究规划/工业网格的智能修复与层次化表示.md",
+                "file": "image/Bezier Curve@1~3.png",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "工业网格的智能修复与层次化表示 的大纲"
+              "title": "Bezier Curve@1~3 的大纲"
             }
           },
           {
@@ -185,12 +171,12 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "calendar"
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
-            "id": "1827e959aabd13a5",
+            "id": "e63cef5679df9a15",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -208,50 +194,49 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "bases:新建数据库": false,
-      "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "bases:新建数据库": false
     }
   },
-  "active": "fa17e9426bda7d10",
+  "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "实验报告/img/aliens0xyz.png",
-    "实验报告/img/chairs9xyz.png",
-    "实验报告/DiffusionNet(2022).md",
-    "实验报告/img/chais9hks.png",
-    "实验报告/img/human40xyz.png",
-    "Pasted image 20260617135744.png",
-    "实验报告/img/human007hks.png",
-    "实验报告/img/human007xyz.png",
     "讨论纪要/周报/260617.md",
-    "实验报告/img/human.png",
-    "实验报告/img/xyz_alien0.png",
-    "实验报告/img/Training.png",
-    "实验报告/img/TrainHuman.png",
-    "作者/Nicholas Sharp.md",
-    "讨论纪要/周报",
-    "作者",
-    "几何处理/几何表示/未命名.md",
-    "研究规划/工业网格的智能修复与层次化表示.md",
-    "几何处理/几何表示/热核签名(HKS).md",
-    "讨论纪要/装机清单.md",
-    "曲面曲线/B-Spline.md",
-    "曲面曲线/Bezier Curve.md",
-    "实验报告/img",
-    "实验报告",
-    "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
+    "几何处理/网格处理/网格测地线算法.md",
     "几何处理/几何表示/几何表示大观.md",
-    "讨论纪要/关于校验思想的若干应用.md",
-    "几何处理/符号距离场（SDF）.md",
+    "讨论纪要/装机清单.md",
+    "讨论纪要/周报",
+    "研究规划/工业网格的智能修复与层次化表示.md",
     "研究规划",
-    "讨论纪要与规划/讨论",
+    "曲面曲线/img/参数曲线家族.png",
+    "曲面曲线/img/Bezier Curve@1~3.png",
+    "曲面曲线/img",
+    "实验报告/img/不定邻居.png",
+    "实验报告/img/xyz_alien0.png",
+    "实验报告/img/TrainHuman.png",
+    "实验报告/img/remesh.png",
+    "实验报告/img/human40xyz.png",
+    "实验报告/img/human007xyz.png",
+    "实验报告/img/human007hks.png",
+    "实验报告/img/human.png",
+    "实验报告/img",
+    "实验报告/DiffusionNet(2022).md",
+    "实验报告",
+    "几何处理/符号距离场（SDF）.md",
+    "几何处理/几何表示/热核签名(HKS).md",
+    "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
+    "作者/Nicholas Sharp.md",
+    "作者",
     "CG图景.md",
+    "讨论纪要/关于校验思想的若干应用.md",
+    "曲面曲线/Bezier Curve.md",
+    "曲面曲线/B-Spline.md",
     "几何处理/神经网络方法",
     "几何处理/网格处理",
     "几何处理/几何表示",
