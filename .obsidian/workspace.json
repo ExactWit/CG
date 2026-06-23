@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "几何处理/网格处理/网格测地线算法.md",
+                "file": "研究规划/Mesh分割调研及综述.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "网格测地线算法"
+              "title": "Mesh分割调研及综述"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -208,6 +209,13 @@
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
     "讨论纪要/周报/260617.md",
+    "研究规划/Mesh分割调研及综述.md",
+    "讨论纪要/周报/260627.md",
+    "讨论纪要/周报/img/混元3D.png",
+    "讨论纪要/周报/img/ECS代理效果.png",
+    "讨论纪要/周报/img/ECS.png",
+    "讨论纪要/周报/img",
+    "讨论纪要/周报/img/tailscale高延迟.png",
     "几何处理/网格处理/网格测地线算法.md",
     "几何处理/几何表示/几何表示大观.md",
     "讨论纪要/装机清单.md",
@@ -221,10 +229,6 @@
     "实验报告/img/xyz_alien0.png",
     "实验报告/img/TrainHuman.png",
     "实验报告/img/remesh.png",
-    "实验报告/img/human40xyz.png",
-    "实验报告/img/human007xyz.png",
-    "实验报告/img/human007hks.png",
-    "实验报告/img/human.png",
     "实验报告/img",
     "实验报告/DiffusionNet(2022).md",
     "实验报告",
@@ -240,7 +244,6 @@
     "几何处理/神经网络方法",
     "几何处理/网格处理",
     "几何处理/几何表示",
-    "几何处理",
     "test.md",
     "讨论纪要/【20260529】关于校验思想的若干应用.md",
     "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md",
