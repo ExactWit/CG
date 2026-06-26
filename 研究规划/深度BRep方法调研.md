@@ -1,7 +1,63 @@
-我来帮你系统梳理这两篇论文的关系，然后一起探索创新方向。
+---
+date: 2026-06-26
+---
+---
+# 2024-2026 相关优质论文
+
+## 方法
+
+| Title                                                                                                                   | Repo                                  | Publish       | Remark                                              |
+| ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------- | ------------- | --------------------------------------------------- |
+| **[Bringing Attention to CAD: Boundary Representation Learning via Transformer](https://arxiv.org/abs/2504.07134)**     | https://github.com/Qiang-Zou/BRT      | CAD 2025      | Feature Extraction                                  |
+| [BrepGen: A B-rep Generative Diffusion Model with Structured Latent Geometry](https://arxiv.org/abs/2401.15563)         | https://github.com/samxuxiang/BrepGen | SIGGRAPH 2024 | Generative Model                                    |
+| [DTGBrepGen: A Novel B-rep Generative Model through Decoupling Topology and Geometry](https://arxiv.org/abs/2503.13110) | https://github.com/jinli99/DTGBrepGen | CVPR 2025     | Watertight Generation                               |
+| [FoV-Net: Rotation-Invariant CAD B-rep Learning via Field-of-View Ray Casting](https://arxiv.org/abs/2602.24084)        | https://github.com/UGent-CVAMO/fovnet | CVPR 2026     | Graph Attention, SO(3)-invariant Feature Extraction |
+|                                                                                                                         |                                       |               |                                                     |
+## 数据集
+
+| Title                                                                                                                                                      | Remark                                                                     |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| [A2Z-10M+: Geometric Deep Learning with A-to-Z BRep Annotations for AI-Assisted CAD Modeling and Reverse Engineering](https://arxiv.org/html/2603.12605v1) | Generated Drafts&Annotation based on **ABC datasets**. 2026                |
+| Fuion 360 Gallery                                                                                                                                          | Including 4 subsets: segmentation, Reconstruction，Assembly (-joints). 2021 |
+|                                                                                                                                                            |                                                                            |
 
 ---
+# 几例BRep任务
+## 判别器
+这类任务主要关注从原始 B-rep 数据中提取语义信息，解决“这是什么”或“这部分有什么用”的问题，**从宏观到微观地，有**：
+- **装配体理解：** 预测零件间的连接关系（Mates）和约束类型
+- **零件级分类与检索：** 如 **UV-Net** 最初关注的形状分类。
+- **语义/操作分割：** 识别 B-rep 的面属于哪种建模操作（如圆角、拉伸）或加工特征（如孔、槽）。**BRepNet** 和 **BRT** 是此领域的代表。
 
+## 生成器
+这类任务关注从潜在空间或文本/点云等输入导出可编辑的 B-rep 模型。
+- **直接 B-rep 合成：** 利用扩散模型（如 **BrepGen**）或 Transformer 解耦架构（如 **DTGBrepGen**）直接生成拓扑骨架和 B-Spline 几何参数。
+- **建模历史/代码生成：** 将 B-rep 几何恢复为可执行的 Python 脚本或 CAD 指令序列。
+- **逆向工程（Point-to-B-rep）：** 从扫描的点云中恢复精确的 B-rep 拓扑，如最新的 **A2Z-10M+** 数据集所支持的任务。
+# 前沿硬骨头
+## Physics-informed
+例1.结合有限元分析（FEA）的性能指标，训练模型自动识别并移除不影响力学性能的细小特征（如装饰性圆角），以加速仿真预处理。**（判别）**
+
+例2.将几何约束求解器或物理评估器（如 **CAD-Assistant** 中的 FEA 验证）直接集成到生成的损失函数中，确保生成的零件不仅“长得像”，而且“强度够。**（生成）**
+
+注:先对BRep做Defeaturing再采样Mesh进行FEA，会比直接对Mesh做Defeaturing更精密。
+## Robust Reconstruction
+例1.从**嘈杂的 3D 扫描数据**直接恢复可编辑的参数化B-rep。
+
+注：目前的生成模型（如 BrepGen）大多处理干净的几何体
+
+## ~~Foundation Models~~（工作量、资源需求过于庞大，不予考虑）
+~~例1.模仿人类工程师的工作流。例如，设计智能体（Design Agent）定方案，生成智能体（Generation Agent）写代码，评审智能体（Review Agent）反馈错误并回滚修改~~
+
+~~例2.建立 B-rep 拓扑图与自然语言的统一表示空间。让 LLM 不仅仅是写代码，而是能直接“看懂”拓扑图并回答工程问题（如：“这个零件的承重结构在哪里？”）~~
+
+## Continuous Representation Learning
+例1.**BRT (Boundary Representation Transformer，2025)**。它放弃了 UV-grid，改用 **Bézier 三角形和 Bézier 曲线** 来编码面和边。这种方法完全在连续域操作，无需离散化。
+
+注：UV-Net 的核心痛点是 **UV-grid 离散采样导致的精度损失**和对手工调节采样率的依赖
+
+---
+# UV-Net&BRepNet：深度BRep学习的开端
 一、UV-Net vs BRepNet：核心对比
 
 维度	UV-Net	BRepNet	

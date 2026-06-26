@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "讨论纪要/周报/260627.md",
+                "file": "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "260627"
+              "title": "常见 3D 数据结构与深度学习应用"
             }
           }
         ]
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UV",
+                "query": "B-Rep",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -207,9 +207,12 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "讨论纪要/周报/img/s2.0.0 1.png",
     "研究规划/深度BRep方法调研.md",
     "讨论纪要/周报/260627.md",
+    "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
+    "讨论纪要/周报/img/s201case546.png",
+    "讨论纪要/周报/img/s200case546.png",
+    "讨论纪要/周报/img/s2.0.0 1.png",
     "讨论纪要/周报/img/s2.0.0.png",
     "讨论纪要/周报/img/BRepNet训练结果.png",
     "几何处理/网格处理/网格测地线算法.md",
@@ -217,19 +220,15 @@
     "讨论纪要/周报/img/Fusion360Seg.png",
     "讨论纪要/周报/img/混元3d车子.png",
     "讨论纪要/周报/260617.md",
-    "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
     "讨论纪要/周报/img/混元3D.png",
     "讨论纪要/周报/img/ECS代理效果.png",
     "讨论纪要/周报/img/ECS.png",
     "讨论纪要/周报/img",
-    "讨论纪要/周报/img/tailscale高延迟.png",
     "几何处理/几何表示/几何表示大观.md",
     "讨论纪要/装机清单.md",
     "讨论纪要/周报",
     "研究规划/工业网格的智能修复与层次化表示.md",
     "研究规划",
-    "曲面曲线/img/参数曲线家族.png",
-    "曲面曲线/img/Bezier Curve@1~3.png",
     "曲面曲线/img",
     "实验报告/img",
     "实验报告/DiffusionNet(2022).md",
