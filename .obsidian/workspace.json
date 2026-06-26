@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -207,6 +208,9 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
+    "讨论纪要/周报/img/999s201.png",
+    "讨论纪要/周报/img/999s200.png",
+    "讨论纪要/周报/img/操作图例.png",
     "讨论纪要/周报/260617.md",
     "讨论纪要/周报/260627.md",
     "几何处理/Metrics.md",
@@ -222,8 +226,6 @@
     "讨论纪要/周报/img/Fusion360Seg.png",
     "讨论纪要/周报/img/混元3d车子.png",
     "讨论纪要/周报/img/混元3D.png",
-    "讨论纪要/周报/img/ECS代理效果.png",
-    "讨论纪要/周报/img/ECS.png",
     "讨论纪要/周报/img",
     "几何处理/几何表示/几何表示大观.md",
     "讨论纪要/装机清单.md",
