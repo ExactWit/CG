@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -207,16 +208,16 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "讨论纪要/周报/260704.md",
+    "讨论纪要/周报/260627.md",
+    "实验报告/BrepNet(2021).md",
     "实验报告/Boundary Representation Transformer(2025).md",
+    "讨论纪要/周报/260704.md",
     "实验报告/img/BRTMethod.png",
     "实验报告/img/BRep.png",
     "实验报告/DiffusionNet(2022).md",
-    "实验报告/BrepNet(2021).md",
     "研究规划/深度BRep方法调研.md",
     "研究规划/Mesh分割调研及综述.md",
     "几何处理/Metrics.md",
-    "讨论纪要/周报/260627.md",
     "讨论纪要/周报/img/999s201.png",
     "讨论纪要/周报/img/999s200.png",
     "讨论纪要/周报/img/操作图例.png",
