@@ -1,3 +1,8 @@
+---
+date: 2026-06-27
+---
+http://arxiv.org/abs/2104.00706
+
 ![[BRepNet训练结果.png]]
 所得mean_iou(per face)低于论文的$0.771\pm 0.005$
 可能原因：
