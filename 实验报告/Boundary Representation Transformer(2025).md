@@ -1,7 +1,7 @@
 ---
 date: 2026-06-28
 ---
-[Bringing Attention to CAD: Boundary Representation Learning via Transformer](10.1016/j.cad.2025.10394)
+[Bringing Attention to CAD: Boundary Representation Learning via Transformer](10.1016/j.cad.2025.10394)（CAD 2025, Zou et.al,ZJU CAD/CG）
 # 概览
 ## 问题
 >[!problem]
@@ -20,7 +20,7 @@ date: 2026-06-28
 >直接使用MLP编码**三维坐标**
 >
 >### **边表示**：
->[[B-Spline]]控制点数量是不定的，传统方法通过采样固定数量的点或折线，这样的方式依赖>具体的离散化尺度校准。本文将B样条曲线分解为连通的[[Bezier Curve]]序列，利用>Boehm算法进行节点插入。
+>[[B-Spline]]控制点数量是不定的，传统方法通过采样固定数量的点或折线，这样的方式依赖具体的离散化尺度校准。本文将B样条曲线分解为连通的[[Bezier Curve]]序列，利用Boehm算法进行节点插入。
 >使用MLP将贝塞尔控制点与中点切向量进行编码得到隐表示，再使用Transformer对隐表示序列进行编码（平均池化）
 >
 >### **面表示**：
@@ -40,6 +40,20 @@ date: 2026-06-28
 >2.一种连续域上的几何编码方法，无需离散化
 >3.一种更全面的拓扑编码方法
 >4.开展了零件**形状分类**（TMCAD、FebWave、SolidLetters）、**操作分割**（Fusion360Seg）、**机加工特征识别**（MFCAD++）上四个模型（BrepNet、UV-Net、AAGNet、BRT）的实验（似乎BrepNet的指标偏低，笔者在s201上的结果是IoU70，S200上IoU79）
+
+---
+# 复现结果
+## Fusion 360 Gallery Segmentation S2.0.0
+BRT数据划分与BrepNet对不上因此可比性不强，但仍和论文差距较大（使用默认划分，应该和论文对的上）现在（0629）已经重新训练中
+
+| Model            | IoU       | Acc       |
+| ---------------- | --------- | --------- |
+| BrepNet          | **79.3**  | **93.6**  |
+| BRT              |           |           |
+| BRT（划分有问题）       | 71.8      | 92.9      |
+| BrepNet(BRT论文披露) | 68.92     | 90.91     |
+| BRT(论文披露)        | **79.23** | **94.48** |
+
 
 --- 
 # Notes：代数拓扑与微分几何视角下的边界表示建模（B-Rep Modeling）

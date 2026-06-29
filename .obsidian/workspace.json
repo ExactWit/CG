@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -208,9 +207,11 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "讨论纪要/周报/260627.md",
-    "实验报告/BrepNet(2021).md",
+    "实验报告/img/BrepNetDataSplit.png",
     "实验报告/Boundary Representation Transformer(2025).md",
+    "实验报告/BrepNet(2021).md",
+    "实验报告/img/BrepnetDataSplit.png",
+    "讨论纪要/周报/260627.md",
     "讨论纪要/周报/260704.md",
     "实验报告/img/BRTMethod.png",
     "实验报告/img/BRep.png",
@@ -226,8 +227,6 @@
     "讨论纪要/周报/img/s201case546.png",
     "讨论纪要/周报/img/s200case546.png",
     "讨论纪要/周报/img/s2.0.0 1.png",
-    "讨论纪要/周报/img/s2.0.0.png",
-    "讨论纪要/周报/img/BRepNet训练结果.png",
     "几何处理/网格处理/网格测地线算法.md",
     "讨论纪要/周报/img",
     "几何处理/几何表示/几何表示大观.md",
@@ -252,7 +251,6 @@
     "test.md",
     "讨论纪要/【20260529】关于校验思想的若干应用.md",
     "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/笔记/Bezier Curve.md",
-    "计算机图形学/笔记/B-Spline.md"
+    "计算机图形学/笔记/Bezier Curve.md"
   ]
 }
