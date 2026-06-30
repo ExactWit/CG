@@ -2,7 +2,26 @@
 date: 2026-06-27
 ---
 http://arxiv.org/abs/2104.00706
+---
+# 方法
+使用的特征仅从step中求值、采样，不要求精确分解
 
+| Content              | Shape       | Remark                                                    |
+| -------------------- | ----------- | --------------------------------------------------------- |
+| face_feat            | (F,7)       | 面类型one-hot（plane,cylinder,cone,sphere,torus）+面积+有理NURBS标志 |
+| face_point_grids     | (F,7,10,10) | UV网格采样:xyz，法向，trim mask                                   |
+| edge_feat            | (E,10)      | 凹/凸/光滑、长度、圆、椭圆、直线、B-spline类型等                             |
+| coedge_feat          | (C,1)       | 是否反向                                                      |
+| coedge_points_grids  | (C,12,10)   | 边上采样点：xyz，切向，左/右面法向                                       |
+| coedge_scale_factors | (C,)        | 尺度归一化因子                                                   |
+| next                 | index       | wire内coedge环                                              |
+| mate                 | index       | 对偶coedge                                                  |
+| face                 | index       | coedge->face                                              |
+| edge                 | index       | coedge->edge                                              |
+
+
+---
+# 实验
 ![[BRepNet训练结果.png]]
 所得mean_iou(per face)低于论文的$0.771\pm 0.005$
 可能原因：
