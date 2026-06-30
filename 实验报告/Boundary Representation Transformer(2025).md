@@ -41,6 +41,13 @@ date: 2026-06-28
 >3.一种更全面的拓扑编码方法
 >4.开展了零件**形状分类**（TMCAD、FebWave、SolidLetters）、**操作分割**（Fusion360Seg）、**机加工特征识别**（MFCAD++）上四个模型（BrepNet、UV-Net、AAGNet、BRT）的实验（似乎BrepNet的指标偏低，笔者在s201上的结果是IoU70，S200上IoU79）
 
+## 局限性
+1.假设了数据集中所有曲面都可以被**低次贝塞尔**（3次，28个控制点）逼近，但实际数据存在退化曲面、病态Trimming曲线等情况，Fusion 360 Gallery Seg数据集中大约7%的样本是无法被BRT处理的，论文没有报告。如果我们将BRT部署到CAD软件中，无法处理用户给出的任意STEP文件，鲁棒性显然不足。
+因此，可以考虑：
+a.一种混合表示模型，同时处理精确贝塞尔分解和UV采样；
+b.神经贝塞尔表示，替代BRT的Boehm结点插入算法，给出一个精确问题的近似解。
+
+
 ---
 # 复现结果
 ## Fusion 360 Gallery Segmentation S2.0.0
