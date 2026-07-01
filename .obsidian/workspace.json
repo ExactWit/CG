@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -209,8 +208,11 @@
   "active": "e63cef5679df9a15",
   "lastOpenFiles": [
     "讨论纪要/周报/260704.md",
-    "实验报告/BrepNet(2021).md",
     "实验报告/Boundary Representation Transformer(2025).md",
+    "几何处理/几种CAD模型操作语义.md",
+    "几何处理/Metrics.md",
+    "实验报告/img/0251拉伸圆角混淆.png",
+    "实验报告/BrepNet(2021).md",
     "实验报告/img/BRT数据预处理问题.png",
     "实验报告/img/BrepNetDataSplit.png",
     "实验报告/img/BrepnetDataSplit.png",
@@ -220,14 +222,12 @@
     "实验报告/DiffusionNet(2022).md",
     "研究规划/深度BRep方法调研.md",
     "研究规划/Mesh分割调研及综述.md",
-    "几何处理/Metrics.md",
     "讨论纪要/周报/img/999s201.png",
     "讨论纪要/周报/img/999s200.png",
     "讨论纪要/周报/img/操作图例.png",
     "讨论纪要/周报/260617.md",
     "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
     "讨论纪要/周报/img/s201case546.png",
-    "讨论纪要/周报/img/s200case546.png",
     "几何处理/网格处理/网格测地线算法.md",
     "讨论纪要/周报/img",
     "几何处理/几何表示/几何表示大观.md",
@@ -251,7 +251,6 @@
     "几何处理/几何表示",
     "test.md",
     "讨论纪要/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md",
-    "计算机图形学/笔记/Bezier Curve.md"
+    "计算机图形学/讨论记录/【20260529】关于校验思想的若干应用.md"
   ]
 }
