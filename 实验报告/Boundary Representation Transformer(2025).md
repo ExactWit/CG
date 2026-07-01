@@ -151,10 +151,13 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >公理2要求k-胞腔内部是无折叠、重叠的（同胚于k-开圆盘内部），边界是无粘合的；
 >公理3要求局部像二维平面，每条边恰好连接两个面。
 >然而实际工业界情况存在诸多情况使得流形B-Rep模型无法合理容纳（需要额外的异常处理）：
+>
 >**1.零厚度壁（违反公理2）**
 >钣金件、垫片、电路板铜层在CAD中都是"零厚度"的，两个不同的Face占用了空间的同一位置（某精度下），整体嵌入的单射性被破坏了。如果强制要求两个Face不能重合，这些零件就无法表示。
+>
 >**2.T型接头（违反公理3）**
 >注塑件、焊接件、建筑结构中的梁交接处，普遍存在三个或更多表面交汇于一条边，使得多于两个面交汇于同一条边。
+>
 >**3.奇异点（违反公理3）**
 >复杂零件的尖角、多特征交汇处（如五个倒角交于一点）、3D打印中的支撑连接点...
 >
@@ -186,7 +189,75 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >[!remark]
 >上链群的元素是定义域为链群，陪域为系数环的函数。上链群的基，也即对偶基，其数目与链群相同。对偶基$c_i^*$的含义为在$c_i$上取1（环$R$单位元），其他情况取$0$(环$R$零元)的函数。
 
+>[!definition]
+>**上边缘算子**
+>边界算子$\partial_k:C_k\rightarrow C_{k-1}$诱导对偶映射:
+>$$
+>\delta^{k}:C^k\rightarrow C^{k+1},\delta^k(\omega):=\omega\circ\partial_{k+1}
+>$$
+>即对任意$k+1$-链$\sigma\in C_{k+1}$，有$(\delta^k\omega)(\sigma):=\omega(\partial_{k+1}\sigma)$
 
+>[!property]
+>**矩阵表示**
+>若$\partial_{k+1}$的矩阵为$B_{k+1}\in R^{n_k\times n_{k+1}}$,则$\delta^k$的矩阵为$B_{k+1}^T$
+>**幂零性对偶**
+>$\delta^{k+1}\circ\delta^k=0$,因为对于$\forall \omega\in C^k,\sigma\in C_{k+2}$
+>$$
+>(\delta^{k+1}\delta^k\omega)(\sigma)=\omega(\partial_{k+1}\partial_{k+2}\sigma)=\omega(0)=0
+>$$
+
+>[!remark]
+>**链复形**
+>k-边缘算子$\partial_k$将k-链分解为(k-1)链元素；
+>k-上链$\omega^{(k)}\in C^k$将k-链映射到系数环上的元素。
+>$$
+\begin{CD}
+\cdots @>{\partial_{k+2}}>> C_{k+1} @>{\partial_{k+1}}>> C_k @>{\partial_k}>> C_{k-1} @>{\partial_{k-1}}>> \cdots \\
+@. @V{\omega^{(k+1)}}VV @V{\omega^{(k)}}VV @V{\omega^{(k-1)}}VV @. \\
+\cdots @. R @. R @. R @. \cdots
+\end{CD}
+$$
+
+$$
+\begin{CD}
+\cdots @<{\delta^{k+1}}<< C^{k+1} @<{\delta^k}<< C^k @<{\delta^{k-1}}<< C^{k-1} @<{\delta^{k-2}}<< \cdots \\
+@. @| @| @| @. \\
+\cdots @. \mathrm{Hom}(C_{k+1},R) @. \mathrm{Hom}(C_k,R) @. \mathrm{Hom}(C_{k-1},R) @. \cdots
+\end{CD}
+$$
+
+
+
+$$
+\begin{CD}
+C_{k+1} @>{\partial_{k+1}}>> C_k \\
+@V{\delta^k\omega}VV @V{\omega}VV \\
+R @= R
+\end{CD}
+$$
+
+$$
+\begin{CD}
+C^1 @<{\delta^1}<< C^2 \\
+@V{\mathrm{MLP}_{\mathrm{edge}}}VV @V{\mathrm{MLP}_{\mathrm{face}}}VV \\
+C^1 @<{\delta^1}<< C^2
+\end{CD}
+$$
+$$
+\begin{CD}
+0 @>>> C_2 @>{\partial_2}>> C_1 @>{\partial_1}>> C_0 @>>> 0 \\
+@. @V{\cong}VV @V{\cong}VV @V{\cong}VV @. \\
+0 @<<< C^2 @<{\delta^1}<< C^1 @<{\delta^0}<< C^0 @<<< 0
+\end{CD}
+$$
+
+$$
+\begin{CD}
+h_{\mathrm{edge}} @<<< h_{\mathrm{face}} \\
+@V{\sum [f:e]}VV @VVV \\
+\partial_2^*(h_{\mathrm{face}}) @>>> \delta^1(h_{\mathrm{edge}})
+\end{CD}
+$$
 
 ---
 
