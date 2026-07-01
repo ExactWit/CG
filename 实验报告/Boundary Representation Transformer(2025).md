@@ -226,12 +226,12 @@ $$
 >k-边缘算子$\partial_k$将k-链分解为(k-1)链元素；
 >k-上链$\omega^{(k)}\in C^k$将k-链映射到系数环上的元素。
 >$$
-\begin{CD}
-\cdots @>{\partial_{k+2}}>> C_{k+1} @>{\partial_{k+1}}>> C_k @>{\partial_k}>> C_{k-1} @>{\partial_{k-1}}>> \cdots \\
-@. @V{\omega^{(k+1)}}VV @V{\omega^{(k)}}VV @V{\omega^{(k-1)}}VV @. \\
-\cdots @. R @. R @. R @. \cdots
-\end{CD}
-$$
+>\begin{CD}
+>\cdots @>{\partial_{k+2}}>> C_{k+1} @>{\partial_{k+1}}>> C_k @>{\partial_k}>> C_{k-1} @>{\partial_{k-1}}>> \cdots \\
+>@. @V{\omega^{(k+1)}}VV @V{\omega^{(k)}}VV @V{\omega^{(k-1)}}VV @. \\
+>\cdots @. R @. R @. R @. \cdots
+>\end{CD}
+>$$
 
 $$
 \begin{CD}
