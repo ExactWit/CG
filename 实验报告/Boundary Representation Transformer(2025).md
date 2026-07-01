@@ -173,9 +173,15 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >$$
 >其中系数环$R$通常取$\mathbb{Z},\mathbb{Z}_2,\mathbb{R}$.
 >标准基记为$\set{c_i}_{i=1}^{n_k}$，有$C_k(\mathcal{B};R)\cong R^{n_k}$
+>
+>**边界算子（Boundary Operator）**
+>$$
+>\partial_k：C_k\rightarrow C_{k-1},\partial_k(c)=\sum_{c^\prime\in C_{k-1}}[c:c^\prime]\cdot c^\prime
+>$$
+>其中关联数$[c:c^\prime]=\set{-1,0,1}$，当$c^\prime\in \partial c$时根据定向相容性取$\pm 1$
 
 >[!remark]
->k-链群是系数环$R$作用在给定k-胞腔（点集$C_0$、边集$C_1$、面集$C_2$等）集合上构成的形式线性组合空间。
+>k-链群是系数环$R$作用在给定k-胞腔（点集$C_0$、边集$C_1$、面集$C_2$等）集合上构成的形式线性组合空间。通常$R$为交换环。
 >在不引起歧义的情况下，$\mathcal{B}$上关于系数环$R$的$k$-链群简记为$C_k$
 
 >[!definition]
@@ -196,6 +202,15 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >\delta^{k}:C^k\rightarrow C^{k+1},\delta^k(\omega):=\omega\circ\partial_{k+1}
 >$$
 >即对任意$k+1$-链$\sigma\in C_{k+1}$，有$(\delta^k\omega)(\sigma):=\omega(\partial_{k+1}\sigma)$
+>
+>如下方交换图所示
+>$$
+\begin{CD}
+C_{k+1} @>{\partial_{k+1}}>> C_k \\
+@V{\delta^k\omega}VV @V{\omega}VV \\
+R @= R
+\end{CD}
+$$
 
 >[!property]
 >**矩阵表示**
@@ -228,13 +243,7 @@ $$
 
 
 
-$$
-\begin{CD}
-C_{k+1} @>{\partial_{k+1}}>> C_k \\
-@V{\delta^k\omega}VV @V{\omega}VV \\
-R @= R
-\end{CD}
-$$
+
 
 $$
 \begin{CD}
