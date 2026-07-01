@@ -98,6 +98,7 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 更正式地，我们针对**流形B-Rep**给出以下定义：
 >[!definition]
 >一个**流形B-Rep实体模型**$\mathcal{B}$ 由以下资料组成：
+>
 >**（1）承载空间（Underlying Space）** 一个**三维带边流形$\mathcal{M}$** (3-manifold with boundary) 及其其边界$\partial\mathcal{M}$，记为$|\mathcal{B}|$。通常$\mathcal{M}$是$\mathbb{R}^3$中的紧致子集。
 >**（2）胞腔复形（Cell Complex）**边界$\partial\mathcal{M}$上的一个**有限正则胞腔分解**（finite regular  cell decomposition） ：
 >$$
@@ -167,6 +168,7 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 
 >[!definition]
 >**链群（Chain Groups）**
+>
 >$k$-维链群$C_k(\mathcal{B};R)$即以$C_k$为基的$R$-模：
 >$$
 >C_k(\mathcal{B};R)=\set{\sum_{i=1}^{n_k}\alpha_i\cdot c_i\mid\alpha_i\in R,c_i\in C_k},
@@ -175,6 +177,7 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >标准基记为$\set{c_i}_{i=1}^{n_k}$，有$C_k(\mathcal{B};R)\cong R^{n_k}$
 >
 >**边界算子（Boundary Operator）**
+>
 >$$
 >\partial_k：C_k\rightarrow C_{k-1},\partial_k(c)=\sum_{c^\prime\in C_{k-1}}[c:c^\prime]\cdot c^\prime
 >$$
@@ -186,6 +189,7 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 
 >[!definition]
 >**上链群（Cochain Groups）**
+>
 >$k$-维上链群定义为$k$-链群$C_k$到$R$的所有$R$-线性映射：
 >$$
 >C^k(\mathcal{B},R):=Hom(C_k(\mathcal{B};R),R),
@@ -197,6 +201,7 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 
 >[!definition]
 >**上边缘算子**
+>
 >边界算子$\partial_k:C_k\rightarrow C_{k-1}$诱导对偶映射:
 >$$
 >\delta^{k}:C^k\rightarrow C^{k+1},\delta^k(\omega):=\omega\circ\partial_{k+1}
@@ -210,12 +215,15 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >@V{\delta^k\omega}VV @V{\omega}VV \\
 >R @= R
 >\end{CD}
-$$
+>$$
 
 >[!property]
 >**矩阵表示**
+>
 >若$\partial_{k+1}$的矩阵为$B_{k+1}\in R^{n_k\times n_{k+1}}$,则$\delta^k$的矩阵为$B_{k+1}^T$
+>
 >**幂零性对偶**
+>
 >$\delta^{k+1}\circ\delta^k=0$,因为对于$\forall \omega\in C^k,\sigma\in C_{k+2}$
 >$$
 >(\delta^{k+1}\delta^k\omega)(\sigma)=\omega(\partial_{k+1}\partial_{k+2}\sigma)=\omega(0)=0
@@ -223,6 +231,7 @@ $$
 
 >[!remark]
 >**链复形**
+>
 >k-边缘算子$\partial_k$将k-链分解为(k-1)链元素；
 >k-上链$\omega^{(k)}\in C^k$将k-链映射到系数环上的元素。
 >$$
