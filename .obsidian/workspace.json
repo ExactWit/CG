@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -205,11 +206,11 @@
       "bases:新建数据库": false
     }
   },
-  "active": "48ac4741871e9fc6",
+  "active": "e63cef5679df9a15",
   "lastOpenFiles": [
+    "讨论纪要/周报/260704.md",
     "实验报告/BrepNet(2021).md",
     "实验报告/Boundary Representation Transformer(2025).md",
-    "讨论纪要/周报/260704.md",
     "实验报告/img/BRT数据预处理问题.png",
     "实验报告/img/BrepNetDataSplit.png",
     "实验报告/img/BrepnetDataSplit.png",
