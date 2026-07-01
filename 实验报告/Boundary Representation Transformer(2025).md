@@ -205,11 +205,11 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >
 >如下方交换图所示
 >$$
-\begin{CD}
-C_{k+1} @>{\partial_{k+1}}>> C_k \\
-@V{\delta^k\omega}VV @V{\omega}VV \\
-R @= R
-\end{CD}
+>\begin{CD}
+>C_{k+1} @>{\partial_{k+1}}>> C_k \\
+>@V{\delta^k\omega}VV @V{\omega}VV \\
+>R @= R
+>\end{CD}
 $$
 
 >[!property]
