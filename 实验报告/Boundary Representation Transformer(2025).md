@@ -138,10 +138,13 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >$$
 >满足:
 >$\Phi_c(D^k)=\bar c$(像集是$c$的闭包)，
+>
 >$\Phi_c|_{\mathring{D}^k}:{\mathring{D}^k}\rightarrow c$是同胚（内部无折叠、重叠），
+>
 >$\Phi_c|_{\partial{D}^k}:\partial{D}^k\rightarrow \bar c\setminus c$是嵌入（边界无自粘）
 >
 >**Axiom.3 Manifold Condition**
+>
 >$\partial\mathcal{M}$是闭2-流形，也即：
 >对于每个边$e\in C_1$定义面度$deg(e):=\#\set{f\in C_2|[f:e]\ne 0}$，要求：
 >$\forall e\in C_1,deg(e)=2$
@@ -149,8 +152,11 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 
 >[!remark]
 >公理1保证$\mathcal{B}$是水密的（边界的边界为空）；
+>
 >公理2要求k-胞腔内部是无折叠、重叠的（同胚于k-开圆盘内部），边界是无粘合的；
+>
 >公理3要求局部像二维平面，每条边恰好连接两个面。
+>
 >然而实际工业界情况存在诸多情况使得流形B-Rep模型无法合理容纳（需要额外的异常处理）：
 >
 >**1.零厚度壁（违反公理2）**
@@ -181,7 +187,10 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >$$
 >\partial_k：C_k\rightarrow C_{k-1},\partial_k(c)=\sum_{c^\prime\in C_{k-1}}[c:c^\prime]\cdot c^\prime
 >$$
->其中关联数$[c:c^\prime]=\set{-1,0,1}$，当$c^\prime\in \partial c$时根据定向相容性取$\pm 1$
+>其中关联数$[c:c'] \in R$满足：
+>- $[c:c'] \neq 0$ 当且仅当 $c' \subset \partial c$（拓扑关联）；
+>- 若$R$支持定向（如$R=\mathbb{Z}$或$\mathbb{R}$），则$[c:c'] \in \{-1, +1\}$，且共享边界的两个胞腔诱导定向相反；
+>- 若$R=\mathbb{Z}_2$，则$[c:c'] \in \{0, 1\}$。
 
 >[!remark]
 >k-链群是系数环$R$作用在给定k-胞腔（点集$C_0$、边集$C_1$、面集$C_2$等）集合上构成的形式线性组合空间。通常$R$为交换环。
@@ -242,6 +251,8 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >\end{CD}
 >$$
 
+
+---
 $$
 \begin{CD}
 \cdots @<{\delta^{k+1}}<< C^{k+1} @<{\delta^k}<< C^k @<{\delta^{k-1}}<< C^{k-1} @<{\delta^{k-2}}<< \cdots \\
@@ -249,11 +260,6 @@ $$
 \cdots @. \mathrm{Hom}(C_{k+1},R) @. \mathrm{Hom}(C_k,R) @. \mathrm{Hom}(C_{k-1},R) @. \cdots
 \end{CD}
 $$
-
-
-
-
-
 $$
 \begin{CD}
 C^1 @<{\delta^1}<< C^2 \\
@@ -276,8 +282,6 @@ h_{\mathrm{edge}} @<<< h_{\mathrm{face}} \\
 \partial_2^*(h_{\mathrm{face}}) @>>> \delta^1(h_{\mathrm{edge}})
 \end{CD}
 $$
-
----
 
 # 创新方案迭代
 ## Scheme a.
