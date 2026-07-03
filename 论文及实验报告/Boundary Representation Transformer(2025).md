@@ -285,4 +285,14 @@ h_{\mathrm{edge}} @<<< h_{\mathrm{face}} \\
 $$
 
 # 创新方案迭代
-## Scheme a.
+## Scheme a. Boundary-Operator Message Passing
+动机：面特征应由带符号的边界边聚合，而非Wire RNN的无向Sum
+$$
+\partial_2 f=\sum_{e\in\partial f}[f:e]\cdot e
+$$
+
+| Model     | IoU  | Acc  |
+| --------- | ---- | ---- |
+| Scheme a  | 78.2 | 94.5 |
+| BRT       | 74.5 | 93.6 |
+| Scheme a1 |      |      |
