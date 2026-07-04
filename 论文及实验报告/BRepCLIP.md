@@ -1,8 +1,9 @@
-论文：[BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding，ArXiv 2026](https://arxiv.org/pdf/2606.05515)
-代码：Coming Soon...
-权重：Coming Soon...
-资源：4卡A100（Stage 1）,1卡A100(Stage 2)
-数据：CADCap-1M from DreamCAD（ABC子集）
+论文：[BRepCLIP: Contrastive Multimodal Pretraining on BRep Primitives for CAD Understanding，ArXiv 2026](https://arxiv.org/pdf/2606.05515)\
+代码：Coming Soon...\
+权重：Coming Soon...\
+资源：4卡A100（Stage 1）,1卡A100(Stage 2)\
+数据：CADCap-1M from DreamCAD（ABC子集）\
+关键词：半结构化点云、对比学习、多模态检索
 
 ---
 # 问题

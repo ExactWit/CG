@@ -172,6 +172,15 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >于是，我们不妨考虑通过弱化正则性（允许不同胞腔几何重叠）和流形性（允许 $\deg(e)\ge 3$ 及奇异链接来容纳这些真实实体，建立**广义B-Rep框架**。
 
 ## 胞腔复形上的离散微分形式
+>[!motivation]
+>**为什么我们需要离散微分形式？**\
+>B-Rep的拓扑元素（Vertex, Edge, Face）不仅是组合结构，更是**几何信息的载体**。我们希望：
+>1.赋予每个拓扑元素以“可测量的量”（如坐标、法向、曲率等）；\
+>2.这些量能在**拓扑结构**上**流动**和**变换**；\
+>3.满足与连续几何类似的**局部-全局关系**（如Stokes定理）。\
+>微分形式提供了这套语言：0-形式对应了点上的函数，1-形式对应了边上的流通量，2-形式对应面上的“密度”。而在胞腔复形上，这些对象有严格的离散类比。
+
+下面先从几个基本的概念开始介绍。
 
 >[!definition]
 >**链群（Chain Groups）**
@@ -252,6 +261,23 @@ sample0251，**拉伸侧面**与**圆倒角**混淆：
 >\end{CD}
 >$$
 
+>[!definition]
+>**离散微分形式**\
+>一个离散$k$-form是一个$k$-cochain$\omega\in C^k$。\
+>具体地：
+>$0-$form$\omega^{(0)}\in C^0$给每个Vertex赋值$\omega^{(0)}(v)\in R$;\
+>$1-$form$\omega^{(1)}\in C^1$给每个Edge赋值$\omega^{(1)}(e)\in R$，满足**反对称性**:$\omega^{(1)}(-e)=-\omega^{(1)}(e);$\
+>$2-$form$\omega^{(2)}\in C^2$给每个Vertex赋值$\omega^{(2)}(f)\in R$.
+
+>[!remark]
+>在光滑流形$\mathcal{M}$上，de Rham复形中的$k$-form是反对称张量场；
+>$$
+>\begin{CD}
+0 @>{d}>> \Omega^0(\mathcal{M})@>{d}>> \Omega^1(\mathcal{M}) @>{d}>> ... @>{d}>>  \Omega^n(\mathcal{M})@>{d}>> 0 \\
+>\end{CD}
+>$$
+>在胞腔复形上，Whitney将这一理论离散化：$k$-cochain就是$k$-form,上边缘算子$\delta^k$就是离散外微分$d$。这一对应使得我们可以使用微分几何的语言描述B-Rep上的特征学习。
+
 
 ---
 $$
@@ -285,14 +311,29 @@ h_{\mathrm{edge}} @<<< h_{\mathrm{face}} \\
 $$
 
 # 创新方案迭代
-## Scheme a. Boundary-Operator Message Passing
+## Scheme A. Boundary-Operator Message Passing
 动机：面特征应由带符号的边界边聚合，而非Wire RNN的无向Sum
 $$
 \partial_2 f=\sum_{e\in\partial f}[f:e]\cdot e
 $$
+1. 维护 1/2-胞腔状态 $h_e, h_f$（由 EdgeEncoder / FaceEncoder 初始化）
 
-| Model     | IoU  | Acc  |
-| --------- | ---- | ---- |
-| Scheme a  | 78.2 | 94.5 |
-| BRT       | 74.5 | 93.6 |
-| Scheme a1 |      |      |
+2. **面更新（$\partial_2$）：** $h_f' = \mathrm{MLP}(h_f,\; \sum_{e \in \partial f} \sigma_{f,e}\, \phi(h_e))$，$\sigma_{f,e} \in \{-1,+1\}$ 由 wire 遍历方向决定（当前数据可推 +1）
+
+3. **边更新（对偶 /  incident faces）：** $h_e' = \mathrm{MLP}(h_e,\; \mathrm{Agg}_{f \ni e} h_f)$
+
+4. 堆叠 $L$ 层（默认 3），替代单层 `TopoEncoder`
+
+场景                                            A1                                       	A2	
+外环coedge多、内环少	平均被外环主导	                   外环正、内环负，显式分离	
+内环coedge多、外环少	平均被内环主导	                    同上	
+孔洞检测                      	隐式、弱	                                显式编码：内环贡献负值	
+face更新	                        边界特征混合	                        外边界 vs 孔洞的差异	
+coedge更新	                   所有coedge收到相同face信号	外环/内环收到相反信号	
+
+
+| Model     | IoU  | Acc  | Test Loss |
+| --------- | ---- | ---- | --------- |
+| Scheme a1 | 78.2 | 94.5 |           |
+| BRT       | 74.5 | 93.6 |           |
+| Scheme a2 | 77.6 | 94.7 | 0.285     |
