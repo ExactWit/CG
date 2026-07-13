@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文及实验报告/Boundary Representation Transformer(2025).md",
+                "file": "论文及实验报告/BRT-A2阶段性复盘.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Boundary Representation Transformer(2025)"
+              "title": "BRT-A2阶段性复盘"
             }
           },
           {
@@ -221,20 +221,20 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
+    "论文及实验报告/Boundary Representation Transformer(2025).md",
+    "论文及实验报告/BRT-A2阶段性复盘.md",
     "讨论纪要/周报/260718.md",
     "讨论纪要/周报/260711.md",
     "讨论纪要/周报/260704.md",
     "讨论纪要/周报/260627.md",
     "讨论纪要/周报/260617.md",
     "论文及实验报告/ECCV CAD Challenge.md",
-    "论文及实验报告/Boundary Representation Transformer(2025).md",
     "论文及实验报告/img/eccv2026example.png",
     "INFRA/exp_launcher.md",
     "研究规划/BRep生成.md",
     "INFRA",
     "作者/图形学专家们.md",
     "研究规划/深度BRep方法调研.md",
-    "论文及实验报告/BRT-A2阶段性复盘.md",
     "几何处理/求交/柱面求交.md",
     "几何处理/Analysis Situs.md",
     "几何处理/求交",
