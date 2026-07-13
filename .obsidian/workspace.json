@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文及实验报告/ECCV CAD Challenge.md",
+                "file": "讨论纪要/周报/260711.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ECCV CAD Challenge"
+              "title": "260711"
             }
           },
           {
@@ -221,9 +221,12 @@
   },
   "active": "48ac4741871e9fc6",
   "lastOpenFiles": [
-    "论文及实验报告/Boundary Representation Transformer(2025).md",
+    "讨论纪要/周报/260704.md",
+    "讨论纪要/周报/260627.md",
+    "讨论纪要/周报/260617.md",
     "讨论纪要/周报/260718.md",
     "论文及实验报告/ECCV CAD Challenge.md",
+    "论文及实验报告/Boundary Representation Transformer(2025).md",
     "论文及实验报告/img/eccv2026example.png",
     "INFRA/exp_launcher.md",
     "研究规划/BRep生成.md",
@@ -234,15 +237,12 @@
     "论文及实验报告/BRT-A2阶段性复盘.md",
     "几何处理/求交/柱面求交.md",
     "几何处理/Analysis Situs.md",
-    "讨论纪要/周报/260704.md",
     "几何处理/求交",
     "论文及实验报告/img/Shaft184.png",
     "CG图景.md",
     "论文及实验报告/img/复杂样本.png",
     "几何处理/几种CAD模型操作语义.md",
-    "讨论纪要/周报/260627.md",
     "论文及实验报告/BRepCLIP.md",
-    "讨论纪要/周报/260617.md",
     "曲面曲线/B-Spline.md",
     "论文及实验报告/img/PrimitiveStatistics.png",
     "论文及实验报告/img/EdgeFaceStatistics.png",
