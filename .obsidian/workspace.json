@@ -27,15 +27,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "研究规划/BRep生成.md",
+                "file": "论文及实验报告/ECCV CAD Challenge.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "BRep生成"
+              "title": "ECCV CAD Challenge"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -219,11 +220,12 @@
       "bases:新建数据库": false
     }
   },
-  "active": "48ac4741871e9fc6",
+  "active": "a8b08ce88beebd5b",
   "lastOpenFiles": [
-    "论文及实验报告/Boundary Representation Transformer(2025).md",
-    "论文及实验报告/BRT-A2阶段性复盘.md",
     "讨论纪要/周报/260718.md",
+    "研究规划/BRep生成.md",
+    "论文及实验报告/BRT-A2阶段性复盘.md",
+    "论文及实验报告/Boundary Representation Transformer(2025).md",
     "讨论纪要/周报/260711.md",
     "讨论纪要/周报/260704.md",
     "讨论纪要/周报/260627.md",
@@ -231,7 +233,6 @@
     "论文及实验报告/ECCV CAD Challenge.md",
     "论文及实验报告/img/eccv2026example.png",
     "INFRA/exp_launcher.md",
-    "研究规划/BRep生成.md",
     "INFRA",
     "作者/图形学专家们.md",
     "研究规划/深度BRep方法调研.md",
