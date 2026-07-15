@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文及实验报告/ECCV CAD Challenge.md",
+                "file": "讨论纪要/周报/260718.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ECCV CAD Challenge"
+              "title": "260718"
             }
           }
         ],
@@ -222,10 +222,12 @@
   },
   "active": "a8b08ce88beebd5b",
   "lastOpenFiles": [
+    "研究规划/工业网格的智能修复与层次化表示.md",
+    "曲面曲线/共形几何代数.md",
     "讨论纪要/周报/260718.md",
+    "论文及实验报告/ECCV CAD Challenge.md",
     "论文及实验报告/Boundary Representation Transformer(2025).md",
     "[Boundary Representation Transformer(2025).md",
-    "论文及实验报告/ECCV CAD Challenge.md",
     "论文及实验报告/img/半透明HLG.png",
     "论文及实验报告/img/透明HLG.png",
     "论文及实验报告/img/render交叠问题.png",
@@ -258,9 +260,7 @@
     "论文及实验报告/BrepNet(2021).md",
     "研究规划/Mesh分割调研及综述.md",
     "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
-    "几何处理/网格处理/网格测地线算法.md",
     "讨论纪要/周报/img",
-    "几何处理/几何表示/几何表示大观.md",
     "讨论纪要/周报",
     "研究规划",
     "曲面曲线/img",
