@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "48ac4741871e9fc6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文及实验报告/BRT-A2阶段性复盘.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "BRT-A2阶段性复盘"
-            }
-          },
-          {
             "id": "a8b08ce88beebd5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "论文及实验报告/Boundary Representation Transformer(2025).md",
+                "file": "讨论纪要/周报/260718.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Boundary Representation Transformer(2025)"
+              "title": "260718"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -220,25 +205,27 @@
       "bases:新建数据库": false
     }
   },
-  "active": "a8b08ce88beebd5b",
+  "active": "e63cef5679df9a15",
   "lastOpenFiles": [
-    "讨论纪要/周报/260718.md",
-    "研究规划/工业网格的智能修复与层次化表示.md",
-    "曲面曲线/共形几何代数.md",
+    "研究规划/BRep生成.md",
+    "论文及实验报告/AutoBrep.md",
     "论文及实验报告/ECCV CAD Challenge.md",
+    "讨论纪要/周报/260718.md",
+    "论文及实验报告/BRT-A2阶段性复盘.md",
+    "论文及实验报告/DiffusionNet(2022).md",
+    "曲面曲线/共形几何代数.md",
     "论文及实验报告/Boundary Representation Transformer(2025).md",
+    "INFRA/exp_launcher.md",
+    "研究规划/工业网格的智能修复与层次化表示.md",
     "[Boundary Representation Transformer(2025).md",
     "论文及实验报告/img/半透明HLG.png",
     "论文及实验报告/img/透明HLG.png",
     "论文及实验报告/img/render交叠问题.png",
-    "研究规划/BRep生成.md",
-    "论文及实验报告/BRT-A2阶段性复盘.md",
     "讨论纪要/周报/260711.md",
     "讨论纪要/周报/260704.md",
     "讨论纪要/周报/260627.md",
     "讨论纪要/周报/260617.md",
     "论文及实验报告/img/eccv2026example.png",
-    "INFRA/exp_launcher.md",
     "INFRA",
     "作者/图形学专家们.md",
     "研究规划/深度BRep方法调研.md",
@@ -255,11 +242,9 @@
     "论文及实验报告/img/EdgeFaceStatistics.png",
     "论文及实验报告/img/BRepCLIP示例.png",
     "论文及实验报告/img/backbone.png",
-    "论文及实验报告/DiffusionNet(2022).md",
     "几何处理/Metrics.md",
     "论文及实验报告/BrepNet(2021).md",
     "研究规划/Mesh分割调研及综述.md",
-    "几何处理/几何表示/常见 3D 数据结构与深度学习应用.md",
     "讨论纪要/周报/img",
     "讨论纪要/周报",
     "研究规划",
