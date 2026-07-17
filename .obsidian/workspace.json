@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "讨论纪要/周报/260718.md",
+                "file": "论文及实验报告/AutoBrep.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "260718"
+              "title": "AutoBrep"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -207,10 +208,10 @@
   },
   "active": "e63cef5679df9a15",
   "lastOpenFiles": [
+    "讨论纪要/周报/260718.md",
+    "论文及实验报告/ECCV CAD Challenge.md",
     "研究规划/BRep生成.md",
     "论文及实验报告/AutoBrep.md",
-    "论文及实验报告/ECCV CAD Challenge.md",
-    "讨论纪要/周报/260718.md",
     "论文及实验报告/BRT-A2阶段性复盘.md",
     "论文及实验报告/DiffusionNet(2022).md",
     "曲面曲线/共形几何代数.md",
