@@ -550,3 +550,5 @@ configs/
 4. **关键「算子」类别**：序列化 I/O、拓扑 BFS/引用、bbox 量化、FSQ-VAE、Transformer AR、共享顶点与 `joint_optimize`、OCC 几何内核。
 
 
+---
+关联笔记：[[AutoBrep改造]]
