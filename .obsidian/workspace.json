@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "讨论纪要/周报/260725.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "260725"
+            }
+          },
+          {
+            "id": "a4440856e904d224",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "论文及实验报告/AutoBrep改造.md",
                 "mode": "source",
                 "source": false
@@ -20,23 +34,8 @@
               "icon": "lucide-file",
               "title": "AutoBrep改造"
             }
-          },
-          {
-            "id": "a8697ee69a6e3bfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "论文及实验报告/AutoBrep.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "AutoBrep"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -220,10 +220,13 @@
       "bases:新建数据库": false
     }
   },
-  "active": "a8697ee69a6e3bfb",
+  "active": "e63cef5679df9a15",
   "lastOpenFiles": [
     "论文及实验报告/AutoBrep改造.md",
+    "讨论纪要/周报/260725.md",
+    "论文及实验报告/img/autobrep_eccv_base_test.png",
     "论文及实验报告/AutoBrep.md",
+    "讨论纪要/周报/260718.md",
     "论文及实验报告/img/006670.svg",
     "论文及实验报告/img/autobrep_eccv_6670.png",
     "论文及实验报告/img/autobrep_eccv_6670pred.png",
@@ -232,8 +235,6 @@
     "论文及实验报告/img/autobrep_eccv_3view_169.png",
     "论文及实验报告/img/autobrep_eccv_169pred.png",
     "论文及实验报告/Boundary Representation Transformer(2025).md",
-    "讨论纪要/周报/260725.md",
-    "讨论纪要/周报/260718.md",
     "研究规划/BRep生成.md",
     "论文及实验报告/ECCV CAD Challenge.md",
     "论文及实验报告/BRT-A2阶段性复盘.md",
@@ -244,7 +245,6 @@
     "[Boundary Representation Transformer(2025).md",
     "论文及实验报告/img/半透明HLG.png",
     "论文及实验报告/img/透明HLG.png",
-    "论文及实验报告/img/render交叠问题.png",
     "讨论纪要/周报/260711.md",
     "讨论纪要/周报/260704.md",
     "讨论纪要/周报/260627.md",

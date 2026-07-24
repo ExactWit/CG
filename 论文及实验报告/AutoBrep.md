@@ -548,7 +548,15 @@ configs/
 2. **训练算子链**：Parquet 过滤 → tokenize → 冻结 FSQ encode 填槽 → Transformer CE。  
 3. **推理算子链**：条件 prompt → AR top-p → 解析邻接与码 → FSQ decode UV → 顶点合并与联合优化 → BSpline/Wire/Sewing → STEP。  
 4. **关键「算子」类别**：序列化 I/O、拓扑 BFS/引用、bbox 量化、FSQ-VAE、Transformer AR、共享顶点与 `joint_optimize`、OCC 几何内核。
+---
+# AutoBrep算子分析
+AutoBrep的核心设计哲学在于，用**某种统一表示**覆盖所有几何类型，也即所有曲线曲面与神经网络之间的中间表示是**点网格采样**，没有类型Token用于区分解析类型。BRep几何形状信息的构造可以概括为将几何Token反量化为**BBox**和**点网格坐标集**，然后用OCC进行BSpline拟合。其理由在于：
 
+1.参数结构不定长且长度可能过长：
+- 平面：(TYPE,n,d)
+- 柱面：（TYPE,c,r,h,a）
+- B-Spline：（TYPE,deg_u,deg_v,nu,nv，...,控制点,...）
+使得序列信息变得更加稀疏
 
 ---
 关联笔记：[[AutoBrep改造]]
