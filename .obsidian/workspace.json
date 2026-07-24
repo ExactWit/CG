@@ -92,8 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -220,10 +219,11 @@
       "bases:新建数据库": false
     }
   },
-  "active": "e63cef5679df9a15",
+  "active": "a8b08ce88beebd5b",
   "lastOpenFiles": [
-    "论文及实验报告/AutoBrep改造.md",
+    "讨论纪要/装机清单.md",
     "讨论纪要/周报/260725.md",
+    "论文及实验报告/AutoBrep改造.md",
     "论文及实验报告/img/autobrep_eccv_base_test.png",
     "论文及实验报告/AutoBrep.md",
     "讨论纪要/周报/260718.md",
