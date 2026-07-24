@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "讨论纪要/周报/260725.md",
+                "file": "讨论纪要/装机清单.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "260725"
+              "title": "装机清单"
             }
           },
           {
@@ -221,8 +221,8 @@
   },
   "active": "a8b08ce88beebd5b",
   "lastOpenFiles": [
-    "讨论纪要/装机清单.md",
     "讨论纪要/周报/260725.md",
+    "讨论纪要/装机清单.md",
     "论文及实验报告/AutoBrep改造.md",
     "论文及实验报告/img/autobrep_eccv_base_test.png",
     "论文及实验报告/AutoBrep.md",
