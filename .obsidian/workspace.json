@@ -36,6 +36,34 @@
             }
           },
           {
+            "id": "603e51d3cd99a544",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "讨论纪要/周报/26Q3/260808.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "260808"
+            }
+          },
+          {
+            "id": "11d9273970cbaac0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "论文及实验报告/ECCV CAD Challenge.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ECCV CAD Challenge"
+            }
+          },
+          {
             "id": "89ee13940ecd2969",
             "type": "leaf",
             "state": {
@@ -48,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -105,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "a3c67888141783e1",
@@ -233,15 +260,19 @@
       "bases:新建数据库": false
     }
   },
-  "active": "c779c6f696584bdf",
+  "active": "603e51d3cd99a544",
   "lastOpenFiles": [
+    "讨论纪要/周报/26Q3/260801.md",
+    "讨论纪要/周报/26Q3/260808.md",
+    "讨论纪要/周报/img/LNG船体Mesh分割.jpg",
     "论文及实验报告/ECCV CAD Challenge.md",
+    "讨论纪要/周报/26Q3/260718.md",
+    "讨论纪要/周报/26Q3/260704.md",
     "论文及实验报告/img/三视图不唯一确定实体2.png",
     "论文及实验报告/CAD primitive partitioning.md",
     "论文及实验报告/三视图不唯一确定实体1.png",
     "论文及实验报告/DiffusionNet(2022).md",
     "论文及实验报告/Img2CADSeq.md",
-    "讨论纪要/周报/26Q3/260801.md",
     "讨论纪要/周报/26Q2/260617.md",
     "论文及实验报告/img/三视图划分.png",
     "论文及实验报告/AutoBrep改造.md",
@@ -252,13 +283,11 @@
     "讨论纪要/周报/26Q3",
     "论文及实验报告/img/autobrep_eccv_base_test.png",
     "论文及实验报告/AutoBrep.md",
-    "讨论纪要/周报/26Q3/260718.md",
     "论文及实验报告/img/006670.svg",
     "论文及实验报告/img/autobrep_eccv_6670.png",
     "论文及实验报告/img/autobrep_eccv_6670pred.png",
     "论文及实验报告/img/autobrep_eccv_base.png",
     "论文及实验报告/img/autobrep_eccv_169.png",
-    "论文及实验报告/img/autobrep_eccv_3view_169.png",
     "论文及实验报告/Boundary Representation Transformer(2025).md",
     "研究规划/BRep生成.md",
     "论文及实验报告/BRT-A2阶段性复盘.md",
@@ -267,12 +296,10 @@
     "研究规划/工业网格的智能修复与层次化表示.md",
     "[Boundary Representation Transformer(2025).md",
     "讨论纪要/周报/26Q3/260711.md",
-    "讨论纪要/周报/26Q3/260704.md",
     "INFRA",
     "作者/图形学专家们.md",
     "研究规划/深度BRep方法调研.md",
     "几何处理/求交/柱面求交.md",
-    "几何处理/Analysis Situs.md",
     "几何处理/求交",
     "讨论纪要/周报/img",
     "讨论纪要/周报",
